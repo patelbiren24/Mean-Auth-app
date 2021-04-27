@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class ProfileComponent implements OnInit {
   user: Object;
   constructor(
-    private authService: AuthService,
+    public authService: AuthService,
     private flashMessages: FlashMessagesService,
     private router: Router
   ) {}
