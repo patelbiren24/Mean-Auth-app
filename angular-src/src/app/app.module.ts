@@ -21,6 +21,12 @@ const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'profile', component: ProfileComponent },
 ];
+declare module '@angular/core' {
+  interface ModuleWithProviders<T = any> {
+    ngModule: Type<T>;
+    providers?: Provider[];
+  }
+}
 @NgModule({
   declarations: [
     AppComponent,
